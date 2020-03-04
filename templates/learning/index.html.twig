@@ -9,9 +9,17 @@
 </style>
 
 <div class="example-wrapper">
-    <h1>DAg {{ controller_name }}! ✅</h1>
+    <h1>Dag  ! ✅</h1>
+//
+    <form action="{{ path('aboutMe') }}"  method="post">
+        <label>Please type your name
+            <input name="name" type="text">
+            <input type="submit">
+        </label>
 
-    This friendly message is coming from:
+    </form>
+//
+
     <ul>
         <li>Your controller at <code><a href="{{ '/var/www/symfonymvc/src/Controller/LearningController.php'|file_link(0) }}">src/Controller/LearningController.php</a></code></li>
         <li>Your template at <code><a href="{{ '/var/www/symfonymvc/templates/learning/index.html.twig'|file_link(0) }}">templates/learning/index.html.twig</a></code></li>
